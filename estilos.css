@@ -1,0 +1,211 @@
+body /*lo que ve el usuario*/
+{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header
+{
+    width: 100;
+    height: 60px;
+}
+
+header nav
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section
+{
+    width: 250px;
+    height: auto;
+    display: flex; /*funciona para acomodar de manera horizontal*/
+    list-style: none;/*funciona para quitarle los puntos de las listas*/
+    justify-content: center;
+    align-items: center;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer; /*funciona para poner el cursos con forma de manita cuando te colocas sobre los enlaces*/
+}
+
+nav .nav-right-section a
+{
+    margin-right: 25px;
+    color: black;
+}
+
+nav .nav-right-section .menu-icon
+{
+   background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png"); 
+   width: 27px;
+   height: 27px;
+   background-size: contain; /*permite asignar un nuevo valor de ancho y alto para nuestras imágenes de acuerdo al tamaño de la pantalla*/
+   background-position: center; /*nos permite decir al navegador donde poner la imagen en la pantalla*/
+   background-repeat: none; /*define como se repiten los fondos del documento*/
+}
+
+nav .nav-right-section img
+{
+    border-radius: 80px; /*modificar los bordes de las imagenes*/
+    margin-left: 15px; /*separa la imagen del icono*/
+    /*modificar el tamaño de la imagen:*/
+    width: 35px; 
+    height: 35px;
+}
+
+main
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+main .main-logo
+{
+    width: 350px; /*ancho*/
+    margin: 0 auto; /*el «0» indica que los margenes superior e inferior sean cero y el «auto» para que el espacio que sobre del ancho lo reparta en dos partes iguales y así la capa quede centrada*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img
+{
+    width: 310px;
+    height: 110px;
+}
+
+main .main-input
+{
+    width: 530px;
+    margin: 0 auto; 
+    margin-bottom: 35px; /*margen para alejarlo de los botones*/
+}
+
+main .main-input-container /*sirve para el contorno de la barra*/
+{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input
+{
+    width: 440px; /*la barra se hace más larga*/
+    height: 40px; /*la barra se hace más ancha*/
+    border: none; /*que no se vea el borde*/
+    outline: none; /*sirve para que al poner el cursor en la barra, el borde no se vea*/
+}
+
+main .main-input-container:hover
+{
+    box-shadow: 0 1px 6px 0 #20212447; /*se hace una sombra al momento de poner el cursor en la barra*/
+}
+
+main .main-input .search-icon
+{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png"); /*imagen de la lupa*/
+    width: 18px; /*ancho*/
+    height: 18px; /*alto*/
+    padding-left: 25px;
+    background-repeat: no-repeat; /*para que no se repita la imagen*/
+    background-position: center; /*centrar la imagen*/
+    background-size: contain; /*para que la imagen se acomode al tamaño de la barra*/
+}
+
+main .main-input .micro-icon
+{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png"); /*imagen del microfono*/
+    width: 18px; /*ancho*/
+    height: 18px; /*alto*/
+    padding-left: 25px; /*describe cuanto espacio colocar entre el borde izquierdo y el contenido del selector*/
+    background-repeat: no-repeat; /*para que no se repita la imagen*/
+    background-position: center; /*centrar la imagen*/
+    background-size: contain; /*para que la imagen se acomode al tamaño de la barra*/
+}
+
+main .main-input .cam-icon
+{
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE"); /*imagen de la camara*/
+    width: 20px; /*ancho*/
+    height: 20px; /*alto*/
+    padding-right: 30px;
+    background-repeat: no-repeat; /*para que no se repita la imagen*/
+    background-position: center; /*centrar la imagen*/
+    background-size: contain; /*para que la imagen se acomode al tamaño de la barra*/
+}
+
+main .main-buttons
+{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div
+{
+    display: inline-block; /*para poner los botones de manera horizontal*/
+}
+
+main .main-buttons button
+{
+    height: 36px;
+    background-color: #f8f9fa; /*cambiar el color del cuadro de texto*/
+    border: 0; /*quitarle la linea de borde*/
+    font-size: 14px; /*hacer más grande el tipo de letra*/
+    color: #5f6368; /*cambiar de color a la fuente de texto*/
+    border-radius: 6px;
+    padding: 0 15px; /*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+    margin-right: 12px; /*sirve para separar los cuadros de texto*/
+}
+
+main .main-buttons button:hover
+{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0.5px 1px 0 #000001; /*permite aplicar una sombra a los botones, se aplica como si fuera las manecillas del reloj: el 0 es arriba, el 0.5 es el lado derecho, el 1 es la parte de abajo y el 0 es el lado izquierdo*/
+    cursor: pointer; /*funciona para cuando coloquemos el cursor en los botones se cambie a una manita*/
+}
+
+footer 
+{
+    width: 100%; /*ancho al poner el 100 ocupa todo el ancho*/
+    height: 50px; /*altura*/
+    background-color: #f2f2f2; /*darle color a un fondo*/
+    position: absolute; /*hace que nuestro footer se coloque hasta la parte inferior*/
+    bottom: 0; /* En conjunto con position: absolute;, este estilo coloca la parte inferior del elemento en la línea inferior de su contenedor*/
+    display: grid; /*Este estilo convierte al elemento en un contenedor de grid, lo que permite aplicar estilos de grid a sus hijos.*/
+    grid-template-columns: 1fr 1fr; /*hace que el documento se convierta de manera cuadricular, al combinarlo con fr hace que el footer se divida en dos columnas, el fr es como el espacio disponible*/
+    align-items: center; /*centra verticalmente a los elementos*/
+    font-size: 15px; /*tamaño de la letra*/
+    border-top: 1px solid #e4e4e4; /*Este estilo agrega un borde sólido de 1 píxel en la parte superior del elemento. El color del borde es un tono de gris*/
+}
+
+footer ul /*funcion para poner la lista de manera horizontal*/
+{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left
+{
+    justify-self: left; /*justificar hacia la izquierda*/
+}
+
+footer .footer-right
+{
+    justify-self: right; /*justificar hacia la derecha*/
+}
+
+footer ul li a /*funcion para separar el texto*/
+{
+    margin: 10px;
+    color: #5f6368;
+}
+
